@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:convert';
 import 'package:http/http.dart' as http; //importando a biblioteca http
-import 'package:async/async.dart'; //requisição assíncrona
+import 'dart:async'; //requisição assíncrona
 
 
 const request = "https://api.hgbrasil.com/finance?format=json&key=8c62b73a&symbol";
@@ -14,3 +14,5 @@ void main() async{
     home: Container()
   ));
 }
+
+//Future<Map> getData()
